@@ -1,4 +1,5 @@
 import './ClimateStats.css';
+// import {useClimate} from '../../context/ClimateContext'
 
 function ClimateStats() {
 
