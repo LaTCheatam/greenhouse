@@ -10,13 +10,13 @@ export const ClimateContext = createContext();
 export const useClimate = () => useContext(ClimateContext);
 
 export const ClimateProvider = (props) => {
-    const[temperature, setTemperature] = useState('50');
+    const[thermometer, setThermometer] = useState('45');
 
     return (
         <ClimateContext.Provider
             value={{
-                temperature,
-                setTemperature
+                thermometer,
+                setThermometer
             }}>
                 {props.children}
             </ClimateContext.Provider>
